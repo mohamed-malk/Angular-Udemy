@@ -1,0 +1,5 @@
+.warn-cls {
+  background-color: rgb(255, 221, 0);
+  padding: var(--pd, 5%);
+  border-radius: var(--rd, 35px);
+}
