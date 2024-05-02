@@ -1,0 +1,31 @@
+<div
+  class="col-sm-9"
+  style="
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  "
+>
+  <input
+    class="form-control"
+    style="text-align: center"
+    type="text"
+    placeholder="Enter UserName"
+    [(ngModel)]="userName"
+  />
+  <p style="margin-top: 2%; color: blue; padding: 1%">
+    UserName is <span style="color: blueviolet">{{ userName }}</span>
+  </p>
+
+  <button
+    [disabled]="userName.length == 0"
+    (click)="resetUserName()"
+    class="btn col-sm-10"
+    style="text-align: center; color: cadetblue; font-weight: bold"
+  >
+    Reset UserName
+  </button>
+</div>
